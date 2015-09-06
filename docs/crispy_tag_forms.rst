@@ -232,7 +232,7 @@ One easy way to validate a crispy-form through AJAX and re-render the resulting 
 
 Our server side code could be::
 
-    @jsonview
+    @json_view
     def save_example_form(request):
         form = ExampleForm(request.POST or None) 
         if form.is_valid():
@@ -308,7 +308,7 @@ The way you do inline forms in Bootstrap version 3 is::
         'email',
         'password',
         'remember_me',
-        StrictButton('Sign in', css_class='btn-default'),
+        StrictButton('Sjign in', css_class='btn-default'),
     )
 
 If you need to set attributes in a field, you have to use ``InlineField`` instead of ``Field``::
